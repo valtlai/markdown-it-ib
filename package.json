@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-ib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use <i> and <b> along with <em> and <strong> with Markdown syntax",
   "author": "Valtteri Laitinen <dev@valtlai.fi>",
   "license": "MIT",
