@@ -4,7 +4,7 @@ import plugin from "./mod.js";
 
 const md = markdownIt().use(plugin);
 
-Deno.test("works", () => {
+Deno.test("Works", () => {
   assertEquals(
     md.render("*A* **B** _C_ __D__"),
     "<p><i>A</i> <b>B</b> <em>C</em> <strong>D</strong></p>\n",

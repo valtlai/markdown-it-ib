@@ -20,6 +20,8 @@ Output:
 
 ### Deno
 
+Import the module from [deno.land/x](https://deno.land/x/markdown_it_ib):
+
 ```js
 import markdownIt from "https://esm.sh/markdown-it@12.0.6";
 import markdownItIB from "https://deno.land/x/markdown_it_ib@1.0.0/mod.js";
@@ -33,15 +35,19 @@ console.log(output);
 
 ### Node.js
 
+Install the [npm package](https://www.npmjs.com/package/markdown-it-ib):
+
 ```sh
-$ npm install markdown-it-ib
+npm install markdown-it-ib
 ```
+
+Then import or require it:
 
 ```js
 import markdownIt from "markdown-it";
 import markdownItIB from "markdown-it-ib";
 // OR
-const md = require("markdown-it");
+const markdownIt = require("markdown-it");
 const markdownItIB = require("markdown-it-ib");
 
 const md = markdownIt()
@@ -53,7 +59,5 @@ console.log(output);
 
 ## See also
 
-- [deno.land/x](https://deno.land/x/markdown_it_ib)
-- [npm registry](https://www.npmjs.com/package/markdown-it-ib)
 - [*You’re using &lt;em> wrong*](https://blog.logrocket.com/youre-using-em-wrong/)
   by Facundo Corradini
