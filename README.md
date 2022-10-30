@@ -28,7 +28,7 @@ Import the module:
 
 ```js
 import markdownIt from 'npm:markdown-it';
-import markdownItIB from 'https://deno.land/x/markdown_it_ib@1.0.1/mod.js';
+import markdownItIB from 'https://deno.land/x/markdown_it_ib@1.0.2/mod.js';
 
 const md = markdownIt()
 	.use(markdownItIB);
