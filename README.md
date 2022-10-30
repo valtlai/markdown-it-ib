@@ -6,7 +6,7 @@ along with the conventional `_` for `<em>` and `__` for `<strong>`.
 
 Example input:
 
-```md
+```
 *A* **B** _C_ __D__
 ```
 
@@ -23,13 +23,13 @@ Output:
 Import the module from [deno.land/x](https://deno.land/x/markdown_it_ib):
 
 ```js
-import markdownIt from "https://esm.sh/markdown-it@12.0.6";
-import markdownItIB from "https://deno.land/x/markdown_it_ib@1.0.0/mod.js";
+import markdownIt from 'https://esm.sh/markdown-it@12.0.6';
+import markdownItIB from 'https://deno.land/x/markdown_it_ib@1.0.0/mod.js';
 
 const md = markdownIt()
-  .use(markdownItIB);
+	.use(markdownItIB);
 
-const output = md.render("*A* **B** _C_ __D__");
+const output = md.render('*A* **B** _C_ __D__');
 console.log(output);
 ```
 
@@ -44,20 +44,20 @@ npm install markdown-it-ib
 Then import or require it:
 
 ```js
-import markdownIt from "markdown-it";
-import markdownItIB from "markdown-it-ib";
+import markdownIt from 'markdown-it';
+import markdownItIB from 'markdown-it-ib';
 // OR
-const markdownIt = require("markdown-it");
-const markdownItIB = require("markdown-it-ib");
+const markdownIt = require('markdown-it');
+const markdownItIB = require('markdown-it-ib');
 
 const md = markdownIt()
-  .use(markdownItIB);
+	.use(markdownItIB);
 
-const output = md.render("*A* **B** _C_ __D__");
+const output = md.render('*A* **B** _C_ __D__');
 console.log(output);
 ```
 
 ## See also
 
-- [*You’re using &lt;em> wrong*](https://blog.logrocket.com/youre-using-em-wrong/)
+- _[You’re using &lt;em> wrong](https://blog.logrocket.com/youre-using-em-wrong/)_
   by Facundo Corradini
