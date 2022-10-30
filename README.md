@@ -23,8 +23,8 @@ Output:
 Import the module from [deno.land/x](https://deno.land/x/markdown_it_ib):
 
 ```js
-import markdownIt from 'https://esm.sh/markdown-it@12.0.6';
-import markdownItIB from 'https://deno.land/x/markdown_it_ib@1.0.0/mod.js';
+import markdownIt from 'npm:markdown-it';
+import markdownItIB from 'https://deno.land/x/markdown_it_ib@1.0.1/mod.js';
 
 const md = markdownIt()
 	.use(markdownItIB);
