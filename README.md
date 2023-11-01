@@ -1,8 +1,7 @@
-# markdown-it-ib
+# markdown_it_ib
 
 [![deno.land](https://deno.land/badge/markdown_it_ib/version)](https://deno.land/x/markdown_it_ib)
-[![NPM](https://img.shields.io/npm/v/markdown-it-ib.svg)](https://www.npmjs.com/package/markdown-it-ib)
-[![License](https://img.shields.io/npm/l/markdown-it-ib.svg)](LICENSE)
+[![License](https://img.shields.io/npm/l/markdown-it-ib.svg)](https://deno.land/x/markdown_it_ib@1.0.3/LICENSE.md?source)
 
 A [markdown-it](https://github.com/markdown-it/markdown-it) plugin
 to use `*` for `<i>` and `**` for `<b>` in your Markdown documents,
@@ -20,44 +19,26 @@ Output:
 <p><i>A</i> <b>B</b> <em>C</em> <strong>D</strong></p>
 ```
 
+## ❌ Deprecated
+
+The dedicated Deno version of this module is deprecated
+and will not receive any updates anymore.
+Please use the following instead:
+
+```js
+import markdownItIB from "npm:markdown-it-ib@VERSION";
+```
+
 ## Usage
 
-### Deno
-
-Import the module:
-
 ```js
-import markdownIt from 'npm:markdown-it';
-import markdownItIB from 'https://deno.land/x/markdown_it_ib@1.0.2/mod.js';
+import markdownIt from "npm:markdown-it";
+import markdownItIB from "https://deno.land/x/markdown_it_ib@1.0.3/mod.js";
 
 const md = markdownIt()
-	.use(markdownItIB);
+  .use(markdownItIB);
 
-const output = md.render('*A* **B** _C_ __D__');
-console.log(output);
-```
-
-### Node.js
-
-Add the package in your project:
-
-```sh
-npm install markdown-it-ib
-```
-
-Then import or require it:
-
-```js
-import markdownIt from 'markdown-it';
-import markdownItIB from 'markdown-it-ib';
-// OR
-const markdownIt = require('markdown-it');
-const markdownItIB = require('markdown-it-ib');
-
-const md = markdownIt()
-	.use(markdownItIB);
-
-const output = md.render('*A* **B** _C_ __D__');
+const output = md.render("*A* **B** _C_ __D__");
 console.log(output);
 ```
 
