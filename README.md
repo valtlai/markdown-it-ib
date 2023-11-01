@@ -1,7 +1,7 @@
 # markdown_it_ib
 
 [![deno.land](https://deno.land/badge/markdown_it_ib/version)](https://deno.land/x/markdown_it_ib)
-[![License](https://img.shields.io/npm/l/markdown-it-ib.svg)](https://deno.land/x/markdown_it_ib@1.0.3/LICENSE.md?source)
+[![License](https://img.shields.io/npm/l/markdown-it-ib.svg)](LICENSE.md)
 
 A [markdown-it](https://github.com/markdown-it/markdown-it) plugin
 to use `*` for `<i>` and `**` for `<b>` in your Markdown documents,
