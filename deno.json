@@ -1,9 +1,0 @@
-{
-	"fmt": {
-		"options": {
-			"proseWrap": "preserve",
-			"singleQuote": true,
-			"useTabs": true
-		}
-	}
-}

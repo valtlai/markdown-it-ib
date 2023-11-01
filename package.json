@@ -1,22 +1,37 @@
 {
 	"name": "markdown-it-ib",
-	"version": "1.0.2",
+	"version": "2.0.0",
 	"description": "Use <i> and <b> along with <em> and <strong> with Markdown syntax",
-	"author": "Valtteri Laitinen <dev@valtlai.fi>",
 	"license": "ISC",
-	"repository": "valtlai/markdown-it-ib",
-	"type": "module",
-	"exports": {
-		"import": "./mod.js",
-		"require": "./mod.cjs"
+	"author": {
+		"name": "Valtteri Laitinen",
+		"email": "dev@valtlai.fi",
+		"url": "https://valtlai.fi/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/valtlai/markdown-it-ib.git"
+	},
+	"type": "commonjs",
+	"exports": "./index.js",
+	"engines": {
+		"node": ">=18"
 	},
 	"scripts": {
-		"prepack": "deno run --allow-read=. --allow-write=. https://raw.githubusercontent.com/valtlai/nodefy/3.1.0/do.js"
+		"test": "node --test",
+		"check": "biome check --apply ."
 	},
-	"engines": {
-		"node": "^12 || ^14 || >=16"
+	"devDependencies": {
+		"@biomejs/biome": "1.3.3",
+		"markdown-it": "^13.0.2"
 	},
 	"keywords": [
+		"em",
+		"strong",
+		"i",
+		"b",
+		"html",
+		"markdown",
 		"markdown-it",
 		"markdown-it-plugin"
 	]

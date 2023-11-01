@@ -1,3 +1,5 @@
+'use strict';
+
 function render(tokens, idx, options, _env, self) {
 	const token = tokens[idx];
 	if (token.markup === '*') token.tag = 'i';
@@ -5,9 +7,9 @@ function render(tokens, idx, options, _env, self) {
 	return self.renderToken(tokens, idx, options);
 }
 
-export default function (md) {
+module.exports = function (md) {
 	md.renderer.rules.em_open = render;
 	md.renderer.rules.em_close = render;
 	md.renderer.rules.strong_open = render;
 	md.renderer.rules.strong_close = render;
-}
+};

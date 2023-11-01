@@ -1,8 +1,6 @@
 # markdown-it-ib
 
-[![deno.land](https://deno.land/badge/markdown_it_ib/version)](https://deno.land/x/markdown_it_ib)
 [![NPM](https://img.shields.io/npm/v/markdown-it-ib.svg)](https://www.npmjs.com/package/markdown-it-ib)
-[![License](https://img.shields.io/npm/l/markdown-it-ib.svg)](LICENSE)
 
 A [markdown-it](https://github.com/markdown-it/markdown-it) plugin
 to use `*` for `<i>` and `**` for `<b>` in your Markdown documents,
@@ -20,32 +18,13 @@ Output:
 <p><i>A</i> <b>B</b> <em>C</em> <strong>D</strong></p>
 ```
 
-## Usage
+## Install
 
-### Deno
-
-Import the module:
-
-```js
-import markdownIt from 'npm:markdown-it';
-import markdownItIB from 'https://deno.land/x/markdown_it_ib@1.0.2/mod.js';
-
-const md = markdownIt()
-	.use(markdownItIB);
-
-const output = md.render('*A* **B** _C_ __D__');
-console.log(output);
 ```
-
-### Node.js
-
-Add the package in your project:
-
-```sh
 npm install markdown-it-ib
 ```
 
-Then import or require it:
+## Usage
 
 ```js
 import markdownIt from 'markdown-it';
