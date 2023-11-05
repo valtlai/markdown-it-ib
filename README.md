@@ -33,8 +33,7 @@ import markdownItIB from 'markdown-it-ib';
 const markdownIt = require('markdown-it');
 const markdownItIB = require('markdown-it-ib');
 
-const md = markdownIt()
-	.use(markdownItIB);
+const md = markdownIt().use(markdownItIB);
 
 const output = md.render('*A* **B** _C_ __D__');
 console.log(output);
