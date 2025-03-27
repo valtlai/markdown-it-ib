@@ -12,7 +12,7 @@
 		"type": "git",
 		"url": "git+https://github.com/valtlai/markdown-it-ib.git"
 	},
-	"type": "commonjs",
+	"type": "module",
 	"exports": "./index.js",
 	"engines": {
 		"node": ">=18"
