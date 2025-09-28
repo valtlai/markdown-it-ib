@@ -2,6 +2,16 @@
 
 This project uses [semantic versioning](https://semver.org/).
 
+## v3.0.0 (2025-MM-DD)
+
+- BREAKING: Update Node.js version requirement
+	- Drop support for EOL versions
+	  (18, 19, 21, 23)
+	- Only support versions where `require(ESM)` works without warnings
+	  (20.19.x, 22.13.x, or 24 or greater)
+
+[`v2.0.0...v3.0.0`](https://github.com/valtlai/markdown-it-ib/compare/v2.0.0...v3.0.0)
+
 ## v2.0.0 (2023-11-01)
 
 - BREAKING: Dropped support for Node.js 12, 14, 16, and 17,
